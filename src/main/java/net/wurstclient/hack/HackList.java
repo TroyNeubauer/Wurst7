@@ -18,6 +18,8 @@ import java.util.TreeMap;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+import com.troy.hack.BlockFinderHack;
+
 import net.minecraft.util.crash.CrashException;
 import net.minecraft.util.crash.CrashReport;
 import net.wurstclient.WurstClient;
@@ -156,6 +158,7 @@ public final class HackList implements UpdateListener
 	public final TrueSightHack trueSightHack = new TrueSightHack();
 	public final TunnellerHack tunnellerHack = new TunnellerHack();
 	public final XRayHack xRayHack = new XRayHack();
+	public final BlockFinderHack blockFinderHack = new BlockFinderHack();
 	
 	private final TreeMap<String, Hack> hax =
 		new TreeMap<>((o1, o2) -> o1.compareToIgnoreCase(o2));
